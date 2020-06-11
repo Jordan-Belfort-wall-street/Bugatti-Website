@@ -95,6 +95,10 @@ body {
     position: relative;
 }
 
+.models div:hover {
+    cursor: pointer;
+}
+
 .models h1 {
     position: absolute;
     top: -30px;
@@ -113,7 +117,7 @@ body {
     grid-gap: 10px;
     padding: 80px;
     position: relative;
-    top: 100px;
+    margin-top: 100px;
 }
 
 .universe img:hover {
@@ -128,4 +132,64 @@ body {
     font-size: 50px;
     top: -40px;
     text-transform: uppercase;
+}
+
+.news {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 80px;
+    margin-top: 70px;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+
+
+@media (max-width: 1200px) {
+    .news{
+        display: flex;
+        flex: 2;
+        flex-wrap: wrap;
+        padding: 0px;
+    }
+
+    .news img {
+        width: 100%;
+        text-align:center;
+        margin-top: 60px;
+    }
+
+}
+
+
+
+
+.news h1 {
+    position: absolute;
+    top: -60px;
+    left: 75px;
+    font-size: 50px;
+    font-family: Roboto-Regular;
+}
+
+.news p {
+
+    margin-left: 40px;
+    font-family: Roboto-Regular;
+    line-height: 28px;
+    font-size: 15px;
+    color: rgb(107, 101, 101);
+    margin-top: 5px;
+}
+
+.pressRelease a {
+    color: rgb(107, 101, 101);
+    text-decoration: none;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.pressRelease a:hover {
+    transition: 4s;
+    border-bottom: 1px solid black;
 }
