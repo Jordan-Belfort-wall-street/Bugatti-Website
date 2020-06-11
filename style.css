@@ -56,15 +56,6 @@ body {
     position: relative;
 }
 
-/* .chiron .text {
-    position: absolute;
-    top: 0px;
-    left: 70px;
-    font-size: 60px;
-    font-family: Roboto-Regular;
-    color: white;
-    font-weight: 700;
-} */
 
 .text {
     position: absolute;
@@ -88,6 +79,27 @@ body {
 .box:hover {
     background-color: white;
     color: black;
+    cursor: pointer;
 }
 
 
+.models {
+    top: 60px;
+    padding: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "item-a item-b item-b"
+    "item-c item-b item-b";
+    grid-gap: 10px;
+    position: relative;
+}
+
+.models h1 {
+    position: absolute;
+    top: -30px;
+    left: 95px;
+    font-size: 50px;
+    font-family: Roboto-Regular;
+    
+}
