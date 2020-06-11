@@ -1,0 +1,52 @@
+body {
+    background-color: whitesmoke;
+    padding: 0px;
+    margin: 0px;
+}
+
+.logo{
+    text-align: center;
+    /* background-color: palegreen; */
+    height: 70px;
+    position: relative;
+}
+
+.logo img {
+    margin-top: -13px;
+}
+
+.hamburger {
+    position: absolute;
+    /* background-color: white; */
+    width: 20px;
+    top: 25px;
+    left: 25px;
+}
+
+.hamburger div {
+    height: 2px;
+    width: 20px;
+    background-color: rgb(107, 101, 101);
+    margin-bottom: 4px;
+}
+
+.hamburger:hover {
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url("Fonts/Roboto-Regular.ttf")
+}
+
+
+.dealer a{
+    float: right;
+    position: absolute;
+    top: 22px;
+    right: 50px;
+    color: rgb(107, 101, 101);
+    text-decoration: none;
+    font-family: Roboto-Regular;
+    font-size: 15px;
+}
