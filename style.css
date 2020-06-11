@@ -161,7 +161,9 @@ body {
 
 }
 
-
+.news img:hover {
+    cursor: pointer;
+}
 
 
 .news h1 {
