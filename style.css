@@ -51,22 +51,59 @@ body {
     font-size: 15px;
 }
 
+@media (max-width: 600px){
+    .logo{
+        text-align: center;
+        /* background-color: palegreen; */
+        height: 70px;
+        position: relative;
+        margin-right: 50px;
+        margin-left: 10px;
+    }
+}
 
-.chiron {
+
+
+#main {
+    width: 100%;
     position: relative;
 }
 
-
-.text {
-    position: absolute;
-    top: 0px;
-    color: white;
-    left: 70px;
-    font-weight: 700;
-    font-family: Helvetica;
+.chiron {
+    position: relative;
+    background-image: url("Images/Chiron.webp");
+    width: 100%;
+    padding-top: 42%;
+    background-size: cover;
+    background-position: center;
 }
 
-.text .box {
+.chironText {
+    width: 400px;
+    margin-bottom: 80px;
+    position: absolute;
+    top: 30px;
+    font-size: 30px;
+    font-family: Roboto-Regular;
+}
+
+.chiron h1 {
+    font-size: 39px;
+    margin-left: 60px;
+    margin-bottom: 40px;
+    font-size: 60px;
+    
+}
+
+
+.chiron p {
+    color: white;
+    margin-left: 60px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.chiron .box {
     border: 1px solid white;
     padding: 15px 5px;
     text-align: center;
@@ -81,6 +118,71 @@ body {
     color: black;
     cursor: pointer;
 }
+
+
+
+@media (max-width: 1100px){
+    .chiron {
+        position: relative;
+        background-image: url("Images/Chiron.webp");
+        width: 100%;
+        padding-top: 32%;
+        background-size: cover;
+        background-position: center;
+        padding-bottom: 200px;
+    }
+    
+}
+
+
+@media (max-width: 800px) {
+    .chiron {
+        position: relative;
+        background-image: url("Images/Chiron.webp");
+        width: 100%;
+        padding-top: 32%;
+        background-size: cover;
+        background-position: center;
+        padding-bottom: 300px;
+    }
+    
+}
+
+
+
+@media (max-width:640px){
+    
+    #main {
+        width: 100%;
+    }
+
+    .chiron{
+        background-image: url("Images/chironw2.webp");
+        background-position: center;
+        width: 100%;
+        background-size: cover;
+        padding-bottom: 440px;
+    }
+
+    .chiron h1 {
+        font-size: 39px;
+        margin-left: 40px;
+        margin-bottom: 40px;
+    }
+
+    .chiron p {
+        color: white;
+        font-family: Roboto-Regular;
+        margin-left: 40px;
+        font-size: 15px;
+    }
+
+}
+
+
+
+
+
 
 
 .models {
@@ -109,6 +211,40 @@ body {
 }
 
 
+
+@media (max-width: 750px) {
+    .models {
+        top: 60px;
+        padding: 25px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "item-a item-c"
+        "item-b item-b";
+        grid-gap: 5px;
+        position: relative;
+    }
+
+    .models .item-c{
+        position: absolute;
+        top: 7px;
+        left: 5px;
+    }
+
+    .models img{
+        margin-top: 20px;
+    }
+
+    .models h1 {
+        font-size: 30px;
+        position: absolute;
+        left: 25px;
+    }
+}
+
+
+
+
 .universe {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -134,6 +270,29 @@ body {
     text-transform: uppercase;
 }
 
+
+@media (max-width: 750px) {
+
+    .universe {
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+        position: relative;
+    }
+
+    .universe img {
+        margin-top: 20px;
+    }
+
+    .universe h1 {
+    position: absolute;
+    left: 25px;
+    font-size: 30px;
+    }
+}
+
+
+
 .news {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -144,19 +303,22 @@ body {
 }
 
 
-
 @media (max-width: 1200px) {
     .news{
         display: flex;
-        flex: 2;
         flex-wrap: wrap;
         padding: 0px;
+        position: relative;
     }
 
     .news img {
         width: 100%;
         text-align:center;
         margin-top: 60px;
+    }
+
+    .news h1 {
+        margin-left: -40px;
     }
 
 }
