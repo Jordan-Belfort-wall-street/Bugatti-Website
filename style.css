@@ -85,7 +85,7 @@ body {
 
 .models {
     top: 60px;
-    padding: 100px;
+    padding: 80px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: 
@@ -98,8 +98,34 @@ body {
 .models h1 {
     position: absolute;
     top: -30px;
-    left: 95px;
+    left: 75px;
     font-size: 50px;
     font-family: Roboto-Regular;
     
+}
+
+
+.universe {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "item-a item-b item-c";
+    grid-gap: 10px;
+    padding: 80px;
+    position: relative;
+    top: 100px;
+}
+
+.universe img:hover {
+    cursor: pointer;
+}
+
+
+.universe h1 {
+    position: absolute;
+    left: 75px;
+    font-family: Roboto-Regular;
+    font-size: 50px;
+    top: -40px;
+    text-transform: uppercase;
 }
