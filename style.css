@@ -486,23 +486,23 @@ body {
 }
 
 
-
-
 .flexbox {
     display: flex;
     flex-wrap: wrap;
     padding: 80px;
     /* border: 1px solid black; */
-    position: relative;
-    top: 140px;
 }
 
-.flexbox h1 {
-    text-transform: uppercase;
-    position: absolute;
-    top: -45px;
-    font-size: 50px;
+.socialH1 {
+   margin-bottom: -80px; 
 }
+
+.socialH1 h1 {
+    margin-left: 80px; 
+    font-size: 50px; 
+    margin-top: 160px;
+}
+
 
 .column {
     flex: 1;
@@ -527,9 +527,14 @@ body {
         padding: 20px;
     }
 
-    .flexbox h1 {
+    .socialH1 {
+        margin-bottom: -20px;
+    }
+
+    .socialH1 h1 {
         font-size: 25px;
-        left: 23px;
+        margin-left: 20px;
+
     }
     .column {
         flex:100%;
