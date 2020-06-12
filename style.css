@@ -247,7 +247,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: 
     "item-a item-b item-c";
-    grid-gap: 5px;
+    grid-gap: 10px;
     padding: 80px;
     position: relative;
     margin-top: 100px;
@@ -484,4 +484,68 @@ body {
     font-size: 18px;
 
 }
+
+
+
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 80px;
+    /* border: 1px solid black; */
+    position: relative;
+    top: 140px;
+}
+
+.flexbox h1 {
+    text-transform: uppercase;
+    position: absolute;
+    top: -45px;
+    font-size: 50px;
+}
+
+.column {
+    flex: 1;
+    padding: 0px 4px;
+    
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+.column img:hover {
+    cursor: pointer;
+
+}
+
+
+
+@media (max-width: 800px){
+    .flexbox {
+        padding: 20px;
+    }
+
+    .flexbox h1 {
+        font-size: 25px;
+        left: 23px;
+    }
+    .column {
+        flex:100%;
+        max-width: 100%;
+    }
+    .column img {
+        margin-top: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
 
