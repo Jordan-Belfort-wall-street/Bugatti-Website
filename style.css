@@ -1,3 +1,5 @@
+               
+               /* >>>>>>>>>>>>>>>>>>>>>> body <<<<<<<<<<<<<<<<<<<<<< */
 body {
     background-color: whitesmoke;
     padding: 0px;
@@ -5,20 +7,35 @@ body {
     font-family: Roboto-Regular;
 }
 
+
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url("Fonts/Roboto-Regular.ttf")
+}
+
+
+            /* >>>>>>>>>>>>>>>>>>>>>> Header part <<<<<<<<<<<<<<<<<<<<<< */
+
+
+
+            /* >>>>>>>>>>>>>>>>>>>>>> Bugatti logo <<<<<<<<<<<<<<<<<<<<<<*/
+
 .logo{
     text-align: center;
-    /* background-color: palegreen; */
     height: 70px;
     position: relative;
 }
 
 .logo img {
     margin-top: -13px;
+    
 }
+
+
+            /* >>>>>>>>>>>>>>>>>>>>>> Hamburger Icon <<<<<<<<<<<<<<<<<<<<<<*/
 
 .hamburger {
     position: absolute;
-    /* background-color: white; */
     width: 20px;
     top: 25px;
     left: 25px;
@@ -35,16 +52,13 @@ body {
     cursor: pointer;
 }
 
-@font-face {
-    font-family: "Roboto-Regular";
-    src: url("Fonts/Roboto-Regular.ttf")
-}
 
+            /* >>>>>>>>>>>>>>>>>>>>>> bugatti map <<<<<<<<<<<<<<<<<<<<<< */
 
-.dealer a{
+.map a{
     float: right;
     position: absolute;
-    top: 22px;
+    top: 26px;
     right: 50px;
     color: rgb(107, 101, 101);
     text-decoration: none;
@@ -52,29 +66,43 @@ body {
     font-size: 15px;
 }
 
+
+
+        /* >>>>>>>>>>>>>>>>>>>> Responsive design for header part <<<<<<<<<<<<<<<<<<< */
+
 @media (max-width: 600px){
     .logo{
         text-align: center;
-        /* background-color: palegreen; */
         height: 70px;
         position: relative;
-        margin-right: 50px;
+        
         margin-left: 10px;
+    }
+    .logo img {
+        margin-left: -20px;
+    }
+    .map a {
+        right: 10px;
     }
 }
 
 
+           /* >>>>>>>>>>>>>>>>>>>> Chiron pur sport car mode <<<<<<<<<<<<<<<<<<< */
+             
 
 #main {
     width: 100%;
     position: relative;
 }
 
+
+           /* >>>>>>>>>>>>>>>>> Making a background image responsive <<<<<<<<<<<<<<< */
+
 .chiron {
     position: relative;
     background-image: url("Images/Chiron.webp");
     width: 100%;
-    padding-top: 42%;
+    padding-top: 42%;   /* >>> padding-top is used for responsive height <<< */
     background-size: cover;
     background-position: center;
 }
@@ -122,6 +150,8 @@ body {
 
 
 
+     /* >>>>>>>>>>>>> Responsive design for chiron part at 1100 pixels <<<<<<<<<<<<< */
+
 @media (max-width: 1100px){
     .chiron {
         position: relative;
@@ -135,6 +165,7 @@ body {
     
 }
 
+     /* >>>>>>>>>>>>> Responsive design for chiron part at 800 pixels <<<<<<<<<<<<< */
 
 @media (max-width: 800px) {
     .chiron {
@@ -150,6 +181,7 @@ body {
 }
 
 
+     /* >>>>>>>>>>>>> Responsive design for chiron part at 640 pixels <<<<<<<<<<<<< */
 
 @media (max-width:640px){
     
@@ -181,6 +213,7 @@ body {
 }
 
 
+           /* >>>>>>>>>>>>>>>>>>>> Bugatti models using grid <<<<<<<<<<<<<<<<<<< */
 
 .models {
     top: 60px;
@@ -194,9 +227,6 @@ body {
     position: relative;
 }
 
-.models div:hover {
-    cursor: pointer;
-}
 
 .models h1 {
     position: absolute;
@@ -207,7 +237,7 @@ body {
     
 }
 
-
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 @media (max-width: 750px) {
     .models {
@@ -240,6 +270,7 @@ body {
 }
 
 
+            /* >>>>>>>>>>>>>>>>>>>>>> Buggati Universe <<<<<<<<<<<<<<<<<<<<<< */
 
 
 .universe {
@@ -268,6 +299,8 @@ body {
 }
 
 
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
 @media (max-width: 750px) {
 
     .universe {
@@ -288,7 +321,7 @@ body {
     }
 }
 
-
+            /* >>>>>>>>>>>>>>>>>>>>>> Buggati latest news <<<<<<<<<<<<<<<<<<<<<< */
 
 .news {
     display: grid;
@@ -299,27 +332,6 @@ body {
     flex-wrap: wrap;
 }
 
-
-@media (max-width: 1200px) {
-    .news{
-        display: flex;
-        flex-wrap: wrap;
-        padding: 0px;
-        position: relative;
-    }
-
-    .news img {
-        width: 100%;
-        text-align:center;
-        margin-top: 60px;
-    }
-
-    .news h1 {
-        margin-left: -50px;
-        font-size: 10px;
-    }
-
-}
 
 .news img:hover {
     cursor: pointer;
@@ -357,6 +369,31 @@ body {
 }
 
 
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (max-width: 1200px) {
+    .news{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0px;
+    }
+
+    .news img {
+        width: 100%;
+        text-align:center;
+        margin-top: 60px;
+    }
+
+    .news h1 {
+        margin-left: -50px;
+        font-size: 30px;
+        margin-top: 60px;
+    }
+
+}
+
+
+        /* >>>>>>>>>>>>>>>>>>>>>> Buggati Informations <<<<<<<<<<<<<<<<<<<<<< */
 
 .info {
     display: grid;
@@ -369,7 +406,7 @@ body {
 .info p {
     font-family: Roboto-Regular;
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 14px;
     color: rgb(107, 101, 101);
 }
 
@@ -382,7 +419,7 @@ body {
 
 }
 
-.info a {
+.infoLink  {
     text-decoration: none;
     color: rgb(107, 101, 101);
     font-family: Roboto-Regular;
@@ -391,17 +428,14 @@ body {
     font-size: 17px;
 }
 
-.info a:hover{
+.infoLink:hover{
     border-bottom: 1px solid rgb(107, 101, 101);
 }
 
 
-@media (max-width: 1200px){
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
-    .info {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
+@media (max-width: 1200px){
 
     .example1 {
         display: grid;
@@ -437,12 +471,14 @@ body {
 }
 
 
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 @media (max-width: 800px){
     .info {
         display: flex;
         flex-direction: column;
         padding: 0px;
+        margin-top: 40px;
     }
 
     .example1 {
@@ -451,7 +487,7 @@ body {
 
     .example1 p {
         margin-top: 40px;
-        margin-left: 0px;
+
     }
 
     .example2 {
@@ -459,7 +495,6 @@ body {
     }
     .example2 p {
         margin-top: 40px;
-        margin-left: 0px;
     }
 
     .example3 {
@@ -473,10 +508,20 @@ body {
     .info p {
         margin-left: 40px;
         margin-bottom: 60px;
+        font-size: 12px;
+    }
+
+    .infoLink {
+        font-size: 14px;
+    }
+
+    .info span {
+        font-size: 15px;
     }
 }
 
 
+            /* >>>>>>>>>>>>>>>>>>>>>> simple text <<<<<<<<<<<<<<<<<<<<<< */
 
 .allNews {
     text-decoration: none;
@@ -486,6 +531,8 @@ body {
 
 }
 
+
+        /* >>>>>>>>>>>>>>>>>>>>>> flex container with 8 images <<<<<<<<<<<<<<<<<<<<<< */
 
 .flexbox {
     display: flex;
@@ -522,6 +569,7 @@ body {
 }
 
 
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 @media (max-width: 800px){
     .flexbox {
@@ -548,6 +596,7 @@ body {
 
 
 
+            /* >>>>>>>>>>>>>>>>>>>>>> simple text <<<<<<<<<<<<<<<<<<<<<< */
 
 .engine {
     margin-top: 200px;
@@ -555,9 +604,20 @@ body {
     font-size: 14px;
     color: rgb(99, 93, 93);
     margin-bottom: 100px;
+    padding: 20px;
+}
+
+@media (max-width: 750px) {
+    .engine {
+        padding: 30px;
+        font-size: 11px;
+    }
 }
 
 
+
+
+            /* >>>>>>>>>>>>>>>>>>>>>> footer <<<<<<<<<<<<<<<<<<<<<< */
 
 #footer {
     background-color: black;
@@ -601,6 +661,8 @@ body {
     
 }
 
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 @media (max-width: 750px){
     #footer {
